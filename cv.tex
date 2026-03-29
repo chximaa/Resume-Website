@@ -1,0 +1,261 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{fontawesome5}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,itemsep=0mm,noitemsep]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+
+%==========================================================
+%   DOCUMENT START
+%==========================================================
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+\parbox{\dimexpr\linewidth\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large EL MEHDAOUI CHAIMAA} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ {+212 695-558825}}\\
+  \href{https://github.com/chximaa}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {github.com/chximaa}} &
+  \href{mailto:elmehdaouichaimaa@gmail.com}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {elmehdaouichaimaa@gmail.com}} \\
+  \href{https://www.linkedin.com/in/el-mehdaoui-chaimaa}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {linkedin.com/in/el-mehdaoui-chaimaa}} &
+  {\raisebox{0.0\height}{\footnotesize \faMapMarker*}\ {Casablanca, Morocco}}
+\end{tabularx}
+\textbf{\Large Web Developer $|$ Final Year Project (PFE) Candidate}
+}
+
+\vspace{2mm}
+
+%-----------SUMMARY-----------------
+\section{SUMMARY}
+\small{
+Third-year Bachelor's student in Web Development at University Hassan II, with a proven ability to build modern, efficient, and user-friendly web applications. Proficient in full-stack web technologies, programming languages, and software engineering principles. Seeking a Final Year Project (PFE) placement to apply and expand technical expertise in a professional environment, contribute to impactful real-world projects, and grow within a collaborative team while respecting academic requirements and deadlines.
+}
+\vspace{-2mm}
+
+%-----------EDUCATION-----------------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University Hassan II — Faculty of Sciences Bn M'sik}{Casablanca, Morocco}
+    {Bachelor's Degree in Web Development}{Sep 2023 — Jun 2026}
+  \resumeSubheading
+    {Bno Mandor High School}{Morocco}
+    {Baccalaureate in Physics \& Chemistry — French Track}{2022 — 2023}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Intern}{Casablanca, Morocco}
+    {JOBWAY}{Aug 2024 — Sep 2024}
+    \resumeItemListStart
+      \item {Completed a one-month observation internship, gaining valuable exposure to professional workflows, company operations, and industry practices within a technology-oriented environment.}
+      \item {Studied team collaboration methods, organizational structures, and business processes, building a strong foundation for future professional engagements.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Private Tutor — Freelance}{Casablanca, Morocco}
+    {Self-employed}{Sep 2024 — Jul 2025}
+    \resumeItemListStart
+      \item {Tutored high school students in Computer Science, Mathematics, Physics, Chemistry, and English, designing personalized lesson plans aligned with each student's academic needs.}
+      \item {Applied targeted teaching strategies and regular progress assessments to measurably improve student performance and foster a deeper understanding of complex concepts.}
+      \item {Developed strong communication, time management, and interpersonal skills through consistent client interaction and academic coaching.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+
+  \resumeProject
+    {Calorie Tracker}
+    {Health \& Wellness Web Application}
+    {2024}
+    {\href{https://github.com/chximaa/Calorie-Tracker}{github.com/chximaa/Calorie-Tracker}}
+    \resumeItemListStart
+      \item {Developed a responsive web application enabling users to log meals, monitor daily calorie intake, and track nutritional data toward personalized health goals.}
+      \item {Implemented dynamic UI interactions using vanilla JavaScript, with clean CSS layouts built on Flexbox and responsive design principles.}
+    \resumeItemListEnd
+
+  \resumeProject
+    {Expenses Tracker}
+    {Personal Finance Web Application}
+    {2024}
+    {\href{https://github.com/chximaa/Expenses-tracker}{github.com/chximaa/Expenses-tracker}}
+    \resumeItemListStart
+      \item {Built a personal budgeting tool that allows users to record, categorize, and analyze spending habits with a clean and intuitive interface.}
+      \item {Applied DOM manipulation and local state management in JavaScript to deliver a seamless single-page user experience.}
+    \resumeItemListEnd
+
+  \resumeProject
+    {Restaurant Management System}
+    {Full-Stack Web Application}
+    {2024}
+    {\href{https://github.com/chximaa/Resteau-management}{github.com/chximaa/Resteau-management}}
+    \resumeItemListStart
+      \item {Designed and implemented a full-featured restaurant management system to handle order tracking, menu management, and table reservations.}
+      \item {Integrated a relational database (MySQL/SQL) for persistent data storage, demonstrating full-stack development and database design skills.}
+    \resumeItemListEnd
+
+  \resumeProject
+    {React Criot Club}
+    {Component-Driven React Application}
+    {2024}
+    {\href{https://github.com/chximaa/React-Criot-club}{github.com/chximaa/React-Criot-club}}
+    \resumeItemListStart
+      \item {Developed a dynamic club management application using React, featuring member management, event listings, and reusable component architecture.}
+      \item {Leveraged React hooks and modern component patterns to deliver an interactive and scalable front-end experience.}
+    \resumeItemListEnd
+
+  \resumeProject
+    {WhatsApp Minimal Clone}
+    {UI/UX Front-End Project}
+    {2024}
+    {\href{https://github.com/chximaa/Whatsapp-Projet-Minimal}{github.com/chximaa/Whatsapp-Projet-Minimal}}
+    \resumeItemListStart
+      \item {Recreated a minimal, pixel-accurate replica of WhatsApp's messaging interface, including chat bubbles, sidebar navigation, and a fully responsive layout.}
+      \item {Demonstrated strong attention to UI/UX detail, CSS architecture, and cross-device responsiveness.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%-----------SKILLS-----------------
+\section{SKILLS}
+\resumeHeadingSkillStart
+  \resumeSubItem{Programming Languages}
+    {Python (Flask, NumPy, Pandas, Matplotlib, Seaborn, scikit-learn), Java, C, C++}
+  \resumeSubItem{Web Development}
+    {HTML5, CSS3, JavaScript (ES6+), React, Responsive Design (Flexbox, Media Queries), Basic UI/UX Principles}
+  \resumeSubItem{Databases \& Data}
+    {SQL, MySQL, Excel, CSV Data Processing, UML (Unified Modeling Language)}
+  \resumeSubItem{Tools \& Collaboration}
+    {Git, GitHub, Visual Studio Code, Canva, Microsoft Office Suite (Word, PowerPoint, OneNote)}
+  \resumeSubItem{Soft Skills}
+    {Teamwork, Problem-Solving, Time Management, Adaptability, Communication, Deadline-Oriented}
+\resumeHeadingSkillEnd
+
+%---------------LANGUAGES-------------------
+\section{LANGUAGES}
+\resumeItemListStart
+  \item {\textbf{Arabic} — Native \hspace{2em} \textbf{French} — Fluent \hspace{2em} \textbf{English} — Professional Working Proficiency}
+\resumeItemListEnd
+\vspace{-4mm}
+
+%---------------ONLINE PROFILES-------------------
+\section{ONLINE PROFILES}
+\resumeItemListStart
+  \item {
+    \href{https://github.com/chximaa}{\textbf{\faGithub \ GitHub:}} \ github.com/chximaa
+    \hspace{3em}
+    \href{https://www.linkedin.com/in/el-mehdaoui-chaimaa}{\textbf{\faLinkedin \ LinkedIn:}} \ linkedin.com/in/el-mehdaoui-chaimaa
+  }
+\resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
