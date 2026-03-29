@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaimaa El Mehdaoui — Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Chaimaa<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════
+       HERO / HOME
+  ════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-content">
+      <div class="hero-text reveal">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="name-first">Chaimaa</span><br />
+          <span class="name-last">El Mehdaoui</span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-badge">Web Developer</span>
+        </div>
+        <p class="hero-intro">
+          Third-year Web Development student at University Hassan II, building
+          modern, efficient, and user-friendly web applications. Seeking a
+          Final Year Project (PFE) where I can contribute and grow.
+        </p>
+        <div class="hero-socials">
+          <a href="https://github.com/chximaa" target="_blank" class="social-btn" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/el-mehdaoui-chaimaa" target="_blank" class="social-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:elmehdaouichaimaa@gmail.com" class="social-btn" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-avatar-wrap reveal reveal-delay">
+        <div class="hero-avatar">
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-initials">CE</div>
+          <div class="avatar-badge">
+            <i class="fa-solid fa-code"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>About Me</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title reveal">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-card-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+          <h3>Profile</h3>
+          <p>
+            I am a motivated third-year Bachelor's student in Web Development
+            with a passion for crafting modern, efficient, and user-friendly
+            digital experiences. I thrive on turning ideas into clean,
+            functional code.
+          </p>
+        </div>
+        <div class="about-card reveal reveal-delay">
+          <div class="about-card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Career Goal</h3>
+          <p>
+            I am seeking a Final Year Project (PFE) where I can apply my
+            full-stack skills in a real-world professional environment,
+            contribute meaningfully to a team, and deliver impactful software
+            solutions.
+          </p>
+        </div>
+        <div class="about-card reveal reveal-delay-2">
+          <div class="about-card-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Languages</h3>
+          <ul class="lang-list">
+            <li><span class="lang-dot arabic"></span>Arabic <span class="lang-level">Native</span></li>
+            <li><span class="lang-dot french"></span>French <span class="lang-level">Fluent</span></li>
+            <li><span class="lang-dot english"></span>English <span class="lang-level">Professional</span></li>
+          </ul>
+        </div>
+        <div class="about-card stat-card reveal reveal-delay">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">GitHub Projects</div>
+        </div>
+        <div class="about-card stat-card reveal reveal-delay-2">
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="about-card stat-card reveal">
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-label">Years Studying</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       EDUCATION
+  ════════════════════════════════════════ -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Education</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title reveal">Academic Background</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2026</span>
+            <h3>Bachelor's Degree in Web Development</h3>
+            <p class="timeline-institution">
+              <i class="fa-solid fa-building-columns"></i>
+              University Hassan II — Faculty of Sciences Bn M'sik, Casablanca
+            </p>
+            <p class="timeline-desc">
+              Pursuing a comprehensive degree in web development, covering
+              full-stack technologies, software engineering principles,
+              databases, UML modeling, and modern frameworks. Actively
+              developing skills in both front-end and back-end development.
+            </p>
+            <div class="timeline-tags">
+              <span>HTML/CSS/JS</span><span>React</span><span>Python</span>
+              <span>SQL</span><span>UML</span><span>Java</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 — 2023</span>
+            <h3>Baccalaureate — Physics & Chemistry (French Track)</h3>
+            <p class="timeline-institution">
+              <i class="fa-solid fa-building-columns"></i>
+              Bno Mandor High School, Morocco
+            </p>
+            <p class="timeline-desc">
+              Graduated with a Baccalaureate in Physics and Chemistry under
+              the French academic track, building a strong analytical and
+              scientific foundation.
+            </p>
+            <div class="timeline-tags">
+              <span>Physics</span><span>Chemistry</span><span>Mathematics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       EXPERIENCE
+  ════════════════════════════════════════ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Experience</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title reveal">Professional Journey</h2>
+      <div class="exp-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div>
+              <h3>Intern</h3>
+              <p class="exp-company">JOBWAY</p>
+            </div>
+            <span class="exp-type badge-blue">Internship</span>
+          </div>
+          <span class="exp-date">
+            <i class="fa-regular fa-calendar"></i> Aug — Sep 2024
+          </span>
+          <ul class="exp-duties">
+            <li>Completed a one-month observation internship, gaining hands-on exposure to professional workflows and company operations.</li>
+            <li>Observed and studied team collaboration methods, industry practices, and organizational structures within a tech-oriented environment.</li>
+            <li>Developed a professional mindset and understanding of workplace expectations in the tech industry.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Professional Development</span>
+            <span>Industry Observation</span>
+            <span>Team Collaboration</span>
+          </div>
+        </div>
+
+        <div class="exp-card reveal reveal-delay">
+          <div class="exp-header">
+            <div class="exp-icon"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+            <div>
+              <h3>Private Tutor</h3>
+              <p class="exp-company">Freelance</p>
+            </div>
+            <span class="exp-type badge-green">Freelance</span>
+          </div>
+          <span class="exp-date">
+            <i class="fa-regular fa-calendar"></i> Sep 2024 — Jul 2025
+          </span>
+          <ul class="exp-duties">
+            <li>Tutored high school students across Computer Science, Mathematics, Science, Physics, Chemistry, and English.</li>
+            <li>Designed personalized lesson plans tailored to each student's learning pace and academic needs.</li>
+            <li>Applied targeted teaching methods and regular assessments to measurably improve academic performance.</li>
+            <li>Fostered a deeper understanding of complex concepts through clear, structured explanations.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Teaching</span><span>Lesson Planning</span>
+            <span>Computer Science</span><span>Communication</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════════ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Projects</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title reveal">Featured Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal featured">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/chximaa/Calorie-Tracker" target="_blank" aria-label="GitHub repo">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <span class="project-featured-tag">★ Featured</span>
+          <h3>Calorie Tracker</h3>
+          <p>
+            A web application designed to help users monitor and manage their
+            daily calorie intake. Users can log meals, track nutritional data,
+            and visualize their health goals — promoting mindful eating habits.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-wallet"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/chximaa/Expenses-tracker" target="_blank" aria-label="GitHub repo">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Expenses Tracker</h3>
+          <p>
+            A personal finance tool that allows users to record, categorize,
+            and analyze their spending. Provides a clear overview of financial
+            habits to encourage better budgeting decisions.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-utensils"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/chximaa/Resteau-management" target="_blank" aria-label="GitHub repo">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Restaurant Management</h3>
+          <p>
+            A full-featured restaurant management system for handling orders,
+            menus, and reservations. Built to streamline daily operations and
+            improve the overall customer experience.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-brands fa-react"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/chximaa/React-Criot-club" target="_blank" aria-label="GitHub repo">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>React Criot Club</h3>
+          <p>
+            A dynamic club management web application built with React,
+            featuring member management, event listings, and interactive UI
+            components that demonstrate modern component-driven architecture.
+          </p>
+          <div class="project-tech">
+            <span>React</span><span>JavaScript</span><span>CSS3</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal featured">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/chximaa/Whatsapp-Projet-Minimal" target="_blank" aria-label="GitHub repo">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <span class="project-featured-tag">★ Featured</span>
+          <h3>WhatsApp Minimal Clone</h3>
+          <p>
+            A minimal, clean clone of WhatsApp's messaging UI, replicating
+            real-time chat features, message bubbles, and a responsive layout.
+            Demonstrates strong front-end and UI/UX design skills.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta reveal">
+        <a href="https://github.com/chximaa?tab=repositories" target="_blank" class="cta-btn">
+          <i class="fa-brands fa-github"></i> View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SKILLS
+  ════════════════════════════════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Skills</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title reveal">Technical Arsenal</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">C</span>
+            <span class="skill-pill">C++</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay">
+          <h3><i class="fa-solid fa-layer-group"></i> Web Development</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skill-pill"><i class="fa-brands fa-react"></i> React</span>
+            <span class="skill-pill">Flexbox</span>
+            <span class="skill-pill">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><i class="fa-solid fa-database"></i> Databases & Data</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Excel</span>
+            <span class="skill-pill">CSV Processing</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">Pandas</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay">
+          <h3><i class="fa-solid fa-tools"></i> Tools & Design</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">UML</span>
+            <span class="skill-pill">Canva</span>
+            <span class="skill-pill">UI/UX Principles</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><i class="fa-solid fa-flask"></i> Python Libraries</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Flask</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">Matplotlib</span>
+            <span class="skill-pill">Seaborn</span>
+            <span class="skill-pill">scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay">
+          <h3><i class="fa-solid fa-users"></i> Soft Skills</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Teamwork</span>
+            <span class="skill-pill">Problem Solving</span>
+            <span class="skill-pill">Time Management</span>
+            <span class="skill-pill">Adaptability</span>
+            <span class="skill-pill">Communication</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Contact</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <p class="contact-subtitle reveal">
+        I'm open to internship opportunities, collaborations, and new
+        connections. Feel free to reach out!
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:elmehdaouichaimaa@gmail.com" class="contact-card reveal">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">elmehdaouichaimaa@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+212695558825" class="contact-card reveal reveal-delay">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value">+212 695-558825</p>
+          </div>
+        </a>
+        <a href="https://github.com/chximaa" target="_blank" class="contact-card reveal reveal-delay-2">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/chximaa</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/el-mehdaoui-chaimaa" target="_blank" class="contact-card reveal">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">EL MEHDAOUI CHAIMAA</p>
+          </div>
+        </a>
+        <div class="contact-card location reveal reveal-delay">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <p class="contact-label">Location</p>
+            <p class="contact-value">Casablanca, Morocco</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2025 Chaimaa El Mehdaoui. Crafted with <i class="fa-solid fa-heart"></i> in Casablanca.</p>
+      <div class="footer-links">
+        <a href="https://github.com/chximaa" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/el-mehdaoui-chaimaa" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:elmehdaouichaimaa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
